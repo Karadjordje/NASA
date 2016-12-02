@@ -1,0 +1,189 @@
+body {
+	font-family: 'Roboto Slab', serif;
+	background-color: gray;        
+}
+.mainContainer {
+	height: 100vh;
+}
+.leva-strana {
+	border-right: 2px solid #000;
+}
+.rover1 {
+	width: 100%;
+	height: 100%;
+}
+.rover1 img {
+	width: 7.5em;
+	height: 7.5em;
+	border-radius: 2em;
+}
+.rover2 {
+	width: 50%;
+	height: 50%;
+}
+.rover2 img {
+	width: 7.5em;
+	height: 7.5em;
+	border-radius: 2em;
+}
+.rover3 {
+	width: 50%;
+	height: 50%;
+}
+.rover3 img {
+	width: 7.5em;
+	height: 7.5em;
+	border-radius: 2em;
+}
+.rover {
+	display: inline-block;
+	border: 2px solid transparent;
+}
+.rover.active {
+	border: 2px solid #83e6d8;
+}
+#imageGallery {
+	margin-top: 2em;
+	padding: 0;
+}
+#imageGallery li {
+	list-style: none;
+}
+#getImages {
+	margin-top: 1em;
+	font-size: 1.1em;
+}
+.cameraView {
+	font-size: 1.8em;
+}
+
+
+.loading {
+	margin-top: 5em;
+	width: 8em;
+	height: auto;
+}
+
+
+/*Ovaj deo je za navodni popUP sto sam pokusavao da napravim*/
+#imageGallery li {
+	position: relative;
+	padding-bottom: 1em;
+}
+.image-popup {
+	cursor: pointer;
+	width: 150px;
+	height: 150px;
+	padding: 2px;
+}
+.bigger {
+	position: absolute;
+	transition: 0.8s;
+	right: 40%;
+	top: 10%;
+	transform: translate(40%, -10%);
+    width: 250px;
+    height: 250px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 450px) {
+	.bigger {
+	position: absolute;
+	right: 50%;
+	top: 10%;
+	transform: translate(50%, -10%);
+    width: 320px;
+    height: 320px;
+    z-index: 1000;
+}
+}
+
+/*Ovaj deo je za input range da bude drugaciji > http://www.cssportal.com/style-input-range/ */
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #4123D8;
+  border-radius: 1px;
+  border: 0px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000031;
+  border: 1px solid #00001E;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #4123D8;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #4123D8;
+  border-radius: 1px;
+  border: 0px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000031;
+  border: 1px solid #00001E;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #4123D8;
+  border: 0px solid #010101;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #4123D8;
+  border: 0px solid #010101;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000031;
+  border: 1px solid #00001E;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #4123D8;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #4123D8;
+}
